@@ -12,6 +12,7 @@ import Deals from "@/components/sections/Deals";
 import Explore from "@/components/sections/Explore";
 import GetStarted from "@/components/sections/GetStarted";
 import Footer from "@/components/sections/Footer";
+import ScrollTopButton from '@/components/ui/ScrollTopButton'
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
      
      
    <Hero/>
+
+    <ScrollTopButton/>
 
    <OurCore/>
    <Aboutus/>

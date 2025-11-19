@@ -19,7 +19,7 @@ export default function Hero() {
 
   
   return (
-    <div className="flex flex-col min-h-screen items-center    font-sans  w-full  relative overflow-hidden ">
+    <div id="hero" className="flex flex-col min-h-screen items-center    font-sans  w-full  relative overflow-hidden ">
 
 
 <Navbar/>
