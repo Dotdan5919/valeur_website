@@ -13,12 +13,12 @@ import Nigeria_EU from '@/images/Nigeria-Eu.jpg'
 gsap.registerPlugin(ScrollTrigger)
 
 export default function MarketToggle() {
-  const [selectedMarket, setSelectedMarket] = useState<'EU to Nigeria' | 'Nigeria to EU'>('EU to Nigeria');
+  const [selectedMarket, setSelectedMarket] = useState<'EU to Nigeria' | 'Nigeria to EU'>('Nigeria to EU');
   const contentRef = useRef(null);
   const imageRef = useRef(null);
   const containerRef = useRef(null);
 
-  const handleToggle = (market: 'EU to Nigeria' | 'Nigeria to EU') => {
+  const handleToggle = (market:'Nigeria to EU'  | 'EU to Nigeria') => {
     gsap.to(contentRef.current, {
       opacity: 0,
       y: -20,
@@ -103,18 +103,14 @@ export default function MarketToggle() {
       ) : (
         <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full gap-24">
           <div className="flex flex-col gap-6 items-start lg:w-[900px]" ref={contentRef}>
-            <h1 className='MyH5'>Connect Nigerian Excellence to European Markets</h1>
+            <h1 className='MyH5'>Your Bridge to Europe’s High-Value Agricultural Markets  </h1>
 
             <div className='text-mytext'>
-              Nigerian agriculture offers incredible diversity - from premium cocoa and cashews 
-              to exotic fruits and organic produce. European consumers increasingly seek authentic, 
-              sustainably-sourced products, creating lucrative opportunities for Nigerian exporters.
+             Breaking into the European Union’s lucrative food and agriculture market requires meeting some of the world’s highest standards. For Nigerian exporters, this can be a barrier — or a game-changing opportunity with the right partner.
 
               <div className='my-6'></div>
 
-              Success in EU markets requires understanding complex regulations, quality standards, 
-              and logistics. At Valeur Global Connect, we simplify this journey for Nigerian 
-              agribusinesses ready to go global.
+            Valeur Global Connect gives Nigerian producers, processors, and exporters a trusted French-based gateway to EU buyers, wholesalers, and retail chain
             </div>
 
             <MyBtn name="Start Exporting to EU" />

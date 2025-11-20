@@ -25,14 +25,7 @@ export default function Home() {
 
    <OurCore/>
    <Aboutus/>
-   <Market/>
-   <OurService/>
-    <ReadyToExpand/>
-    <Resources/>
-    <Deals/>
-    <Explore/>
-    <GetStarted/>
-    <Footer/>
+   <Footer/>
 
 
     </div>

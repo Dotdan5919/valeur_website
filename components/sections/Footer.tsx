@@ -7,17 +7,24 @@ import facebook from '@/images/facebook.png'
 import linkedin from '@/images/linkedin.png'
 import xicon from '@/images/X-twitter.png'
 import Link from 'next/link'
+import logo from '@/images/white_logo.png'
 
 export default function Footer() {
 	return (
 		<footer className="bg-[#142434] text-gray-300 w-full">
 			<div className="max-w-7xl mx-auto px-6 py-12">
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+				<div className="grid grid-cols-1 md:grid-cols-4	 gap-8 ">
 					<div className="md:col-span-2">
+						<Image src={logo} alt="Logo" className='h-10 w-auto mb-4' />
 						<h2 className="text-2xl MyH5_new text-white">Valeur Global Connect</h2>
 						<p className="mt-3 text-sm text-gray-300 max-w-lg">French Agricultural Trade Facilitator connecting Europe and Africa through trusted partnerships, regulatory compliance expertise, and sustainable trade solutions.</p>
 
-						<div className="mt-6 space-y-3 text-gray-300">
+						
+
+						
+					</div>
+					<div className="mt-6 space-y-3 text-gray-300">
+						<h3 className="text-white text-lg MyH5_new">Get in Touch</h3>
 							<div className="flex items-center gap-3">
 								<Image src={addressIcon} alt='address' className='w-5 h-5'/>
 								<span className="text-sm">123 Avenue des Champs-Élysées75008 Paris, France</span>
@@ -32,9 +39,7 @@ export default function Footer() {
 								<Image src={mailIcon} alt='mail' className='w-5 h-5'/>
 								<a className="text-sm hover:underline" href="mailto:paris@valeurglobalconnect.com">paris@valeurglobalconnect.com</a>
 							</div>
-						</div>
-
-						<div className="mt-6 flex items-center gap-3">
+							<div className="mt-6 flex items-center gap-3">
 							<a aria-label="LinkedIn" className="w-8 h-8 rounded-full bg-[#c8f6d1] flex items-center justify-center text-[#0f3740] hover:scale-105 duration-500 hover:shadow-sm transition-all" href="#">
 								<Image src={linkedin} alt='linkedin' className=''/>
 							</a>
@@ -46,8 +51,8 @@ export default function Footer() {
 							<a aria-label="Facebook" className="w-8 h-8 rounded-full bg-[#c8f6d1] flex items-center justify-center text-[#0f3740] hover:scale-105 duration-500 hover:shadow-sm transition-all" href="#">
 								<Image src={facebook} alt='facebook' className=''/>
 							</a>
+						</div>	
 						</div>
-					</div>
 
 
 					<div className='lg:justify-self-end'>

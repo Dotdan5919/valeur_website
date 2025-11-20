@@ -20,7 +20,7 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: '/about', label: 'About Us' },
+    { href: '/', label: 'Home' },
     { href: '/market', label: 'Market' },
     { href: '/trade', label: 'Trade' },
     { href: '/resources', label: 'Resources' },
