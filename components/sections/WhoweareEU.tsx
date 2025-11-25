@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Whoweare() {
+export default function WhoweareEU() {
   return (
     <div className='flex md:flex-row flex-col justify-between gap-6 my-6'>
 

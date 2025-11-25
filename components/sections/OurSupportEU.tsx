@@ -13,7 +13,7 @@ import SupportCard from '../ui/SupportCard'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export default function OurSupport() {
+export default function OurSupportEU() {
 
   const containerRef = useRef(null)
   const headingRef = useRef(null)
@@ -59,14 +59,14 @@ export default function OurSupport() {
       tl.to(headingRef.current, {
         opacity: 1,
         y: 0,
-        duration: .5,
+        duration: .4,
         ease: "power3.out",
       })
         // Then animate cards one by one
         .to(cards, {
           opacity: 1,
           y: 0,
-          duration: .6,
+          duration: .5,
           ease: "power3.out",
           stagger: 0.15,
         }, "-=0.2")

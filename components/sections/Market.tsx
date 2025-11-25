@@ -4,8 +4,8 @@ import BtnToggle from '../ui/BtnToggle'
 import MyBtn from '../ui/MyBtn'
 import Image from 'next/image'
 import EU_Nigeria from '@/images/EU-Nigeria.jpg'
-import OurSupport from './OurSupport'
-import Whoweare from './Whoweare'
+import OurSupport from './OurSupportEU'
+import Whoweare from './WhoweareEU'
 import MarketToggle from './MarketToggle'
 
 export default function   Market() {
@@ -20,9 +20,9 @@ export default function   Market() {
 
 
 
-<OurSupport/>
+{/* <OurSupport/>
 
-<Whoweare/>
+<Whoweare/> */}
 
 
       

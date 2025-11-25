@@ -9,6 +9,8 @@ import MyBtn from '../ui/MyBtn'
 import Image from 'next/image'
 import EU_Nigeria from '@/images/EU-Nigeria.jpg'  
 import Nigeria_EU from '@/images/Nigeria-Eu.jpg' 
+import EUNigeria from '../animated-elements/EUNigeria'
+import NigeriaEU from '../animated-elements/NigeriaEU'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -21,7 +23,7 @@ export default function MarketToggle() {
   const handleToggle = (market:'Nigeria to EU'  | 'EU to Nigeria') => {
     gsap.to(contentRef.current, {
       opacity: 0,
-      y: -20,
+      y: -10,
       duration: 0.7,
       onComplete: () => setSelectedMarket(market)
     })
@@ -71,60 +73,9 @@ export default function MarketToggle() {
       <BtnToggle market={selectedMarket} onToggle={handleToggle} />
 
       {selectedMarket === 'EU to Nigeria' ? (
-        <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full gap-24">
-          <div className="flex flex-col gap-6 items-start lg:w-[900px]" ref={contentRef}>
-            <h1 className='MyH5'>Your Gateway to West Africa's Agricultural Powerhouse</h1>
-
-            <div className='text-mytext'>
-              Nigeria is not only Africa's most populous country but also one of its 
-              fastest-growing agri-economies. For EU-based companies, this means 
-              unparalleled opportunities in agricultural trade, agritech adoption, and 
-              value-added processing.
-
-              <div className='my-6'></div>
-
-              But navigating this market requires more than ambition - it requires a 
-              trusted partner who understands the terrain. At Valeur Global Connect, we 
-              bridge the gap.
-            </div>
-
-            <MyBtn name="Partner with Us" />
-          </div>
-
-          <div className='overflow-hidden rounded-lg'>
-            <Image 
-              ref={imageRef}
-              src={EU_Nigeria} 
-              alt="EU to Nigeria Market" 
-              className='object-cover rounded-lg duration-700 hover:scale-105 transition-all lg:w-[806px]' 
-            />
-          </div>
-        </div>
+        <EUNigeria cRef={contentRef} iRef={imageRef}/>
       ) : (
-        <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full gap-24">
-          <div className="flex flex-col gap-6 items-start lg:w-[900px]" ref={contentRef}>
-            <h1 className='MyH5'>Your Bridge to Europe’s High-Value Agricultural Markets  </h1>
-
-            <div className='text-mytext'>
-             Breaking into the European Union’s lucrative food and agriculture market requires meeting some of the world’s highest standards. For Nigerian exporters, this can be a barrier — or a game-changing opportunity with the right partner.
-
-              <div className='my-6'></div>
-
-            Valeur Global Connect gives Nigerian producers, processors, and exporters a trusted French-based gateway to EU buyers, wholesalers, and retail chain
-            </div>
-
-            <MyBtn name="Start Exporting to EU" />
-          </div>
-
-          <div className='overflow-hidden rounded-lg'>
-            <Image 
-              ref={imageRef}
-              src={Nigeria_EU} 
-              alt="Nigeria to EU Market" 
-              className='object-cover rounded-lg duration-700 hover:scale-105 transition-all lg:w-[806px]' 
-            />
-          </div>
-        </div>
+       <NigeriaEU cRef={contentRef} iRef={imageRef} />
       )}
     </div>
   )
