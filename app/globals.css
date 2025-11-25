@@ -1,6 +1,31 @@
 @import "tailwindcss";
 
 
+html, body {
+  background-color: white;
+  color: black;
+}
+
+/* Force light mode even if system prefers dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+  html, body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+css/* In your globals.css or app.css */
+:root {
+  color-scheme: light only;
+}
+
+html, body {
+  background-color: white;
+  color: black;
+}
+
 
 @font-face {
   font-family: 'Libre'; /* Choose a name for your font */
