@@ -12,7 +12,7 @@ export default function NigeriaEU({cRef,iRef}: any) {
   return (
     <>
 
- <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full gap-24">
+ <div className="flex lg:flex-row flex-col justify-between lg:items-center items-center w-full gap-24">
           <div className="flex flex-col gap-6 items-start lg:w-[900px]" ref={cRef}>
             <h1 className='MyH5'>Your Bridge to Europe’s High-Value Agricultural Markets  </h1>
 

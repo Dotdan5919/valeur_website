@@ -17,7 +17,7 @@ export default function EUNigeria({cRef,iRef}: any) {
           <div className="flex flex-col gap-6 items-start lg:w-[900px]" ref={cRef}>
             <h1 className='MyH5'>Your Gateway to West Africa's Agricultural Powerhouse</h1>
 
-            <div className='text-mytext'>
+            <div className='text-mytext'> 
               Nigeria is not only Africa's most populous country but also one of its 
               fastest-growing agri-economies. For EU-based companies, this means 
               unparalleled opportunities in agricultural trade, agritech adoption, and 
