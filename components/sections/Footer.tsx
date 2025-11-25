@@ -14,7 +14,7 @@ export default function Footer() {
 		<footer className="bg-[#142434] text-gray-300 w-full lg:px-21 px-6 py-12  md:px-12 ">
 			<div className=" ">
 						<Image src={logo} alt="Logo" className='h-24 w-auto mb-9' />
-				<div className="grid grid-cols-1 md:grid-cols-4	  ">
+				<div className="grid grid-cols-1 md:grid-cols-4	gap-8  ">
 					<div className="md:col-span-2 md:col-start-1  ">
 						<h2 className="text-2xl MyH5_new text-white">Valeur Global Connect</h2>
 						<p className="mt-3 text-sm text-gray-300 max-w-lg">French Agricultural Trade Facilitator connecting Europe and Africa through trusted partnerships, regulatory compliance expertise, and sustainable trade solutions.</p>

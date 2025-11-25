@@ -4,6 +4,8 @@ import Nigeria_EU from '@/images/Nigeria-Eu.jpg'
 import MyBtn from '../ui/MyBtn'
 import { useRef } from 'react'    
 import { forwardRef } from 'react';
+import OurSupportNG from '../sections/OurSupportNG'
+import WhoweareNG from '../sections/WhoweareNG'
 
 
 export default function NigeriaEU({cRef,iRef}: any) {
@@ -34,6 +36,10 @@ export default function NigeriaEU({cRef,iRef}: any) {
             />
           </div>
         </div>
+
+        <OurSupportNG/>
+
+        <WhoweareNG/>
 
 
       

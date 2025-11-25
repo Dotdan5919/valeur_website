@@ -83,25 +83,27 @@ export default function OurSupportEU() {
   return (
     <div className='w-full flex items-center justify-center flex-col gap-6 mt-16' ref={containerRef}>
       {/* 🛑 FIX: Assign headingRef to the <h1> element */}
-      <h1 ref={headingRef} className='MyH5'>Our Support for EU Companies</h1> 
+      <h1 ref={headingRef} className='MyH5'>Our Support for Nigerian Exporters</h1> 
       
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6" >
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6" >
         <div ref={card1Ref}>
-          <SupportCard name='Local Partner Identification' description='We source and vet trustworthy distributors, suppliers, and joint-venture partners aligned with your standards.' Img={local} />
+          <SupportCard name='EU Standards Compliance' description='Guidance and facilitation for traceability
+systems, phytosanitary certificates, organic certifications, and other
+regulatory requirements.' Img={local} />
         </div>
 
         <div ref={card2Ref}>
-          <SupportCard name='Government Liaison' description='We facilitate engagement with regulatory agencies to ensure compliance and reduce bureaucratic delays.' Img={Gov} />
+          <SupportCard name='Packaging, Logistics & Documentation' description='– Ensuring your products meet EU
+presentation standards and documentation requirements for smooth customs
+clearance.' Img={Market} />
         </div>
 
         <div ref={card3Ref}>
-          <SupportCard name='Market Intelligence' description='Data-driven insights on consumer trends, competitor activities, and policy shifts for informed decisions.' Img={Trade} />
+          <SupportCard name='Market Matchmaking' description='Introducing you to reputable buyers, processors, and wholesalers across Europe.' Img={Trade} />
         </div>
 
-        <div ref={card4Ref}>
-          <SupportCard name='Import/Export Facilitation' description='From paperwork to port clearance, we ensure your products move efficiently and legally.' Img={Market} />
-        </div>
+      
       </div>
     </div>
   )

@@ -9,16 +9,10 @@ export default function WhoweareEU() {
 
 <ul className="grid grid-cols-2 gap-6 text-mytext">
 
-    <li>Agritech innovators introducing 
-cutting-edge farming solutions</li>
-    <li>Exporters seeking new sales 
-channels</li>
-    <li>Food processors expanding 
-sourcing networks</li>
-    <li>Agricultural input suppliers (seeds, 
-fertilizers, irrigation systems)</li>
-    <li>Agri-investors building scalable 
-West African ventures</li>
+    <li>Exporters of fresh fruits, vegetables, and horticultural products</li>
+    <li>Processed food manufacturers seeking EU retail entry</li>
+    <li>Agricultural cooperatives aiming for premium global markets</li>
+   
 
 
 
@@ -29,10 +23,9 @@ West African ventures</li>
 <div className="flex flex-col p-7 items-start justify-center rounded-lg shadow-lg  md:w-[560px]">
 
 <h3 className='MyH5'>Why Partner With Us?</h3>
-<p className='text-mytext'>Our position as a registered French trade company 
-operating within Nigerian networks gives you the 
-credibility, local knowledge, and speed to enter and grow 
-in this vibrant market without unnecessary risk.</p>
+<p className='text-mytext'>We combine European credibility with Nigerian trade expertise, ensuring your
+products are not only market-ready but positioned for premium pricing and long-term
+buyer relationships..</p>
 
 
 
