@@ -6,6 +6,7 @@ import mailIcon from '@/images/mail.png'
 import facebook from '@/images/facebook.png'
 import linkedin from '@/images/linkedin.png'
 import xicon from '@/images/X-twitter.png'
+// import instagram from '@/images/instagram.png'
 import Link from 'next/link'
 import logo from '@/images/white_logo.png'
 
@@ -50,6 +51,14 @@ export default function Footer() {
 
 							<a aria-label="Facebook" className="w-8 h-8 rounded-full bg-[#c8f6d1] flex items-center justify-center text-[#0f3740] hover:scale-105 duration-500 hover:shadow-sm transition-all" href="#">
 								<Image src={facebook} alt='facebook' className=''/>
+							</a>
+
+							<a aria-label="Instagram" className="w-8 h-8 rounded-full bg-[#c8f6d1] flex items-center justify-center text-[#0ac499] hover:scale-105 duration-500 hover:shadow-sm transition-all" href="#">
+								<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+									<rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.5" />
+									<circle cx="12" cy="12" r="3.2" stroke="currentColor" strokeWidth="1.5" />
+									<circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" />
+								</svg>
 							</a>
 						</div>	
 						</div>

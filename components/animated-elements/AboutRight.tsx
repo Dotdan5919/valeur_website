@@ -8,60 +8,64 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 export default function AboutRight() {
-  const desktopRef = useRef(null)
-  const mobileRef = useRef(null)
+  const containerRef = useRef(null)
 
   useEffect(() => {
+    // Wait for images to load and DOM to be ready
     const timer = setTimeout(() => {
-      const elements = [desktopRef.current, mobileRef.current].filter(Boolean)
-      
-      if (elements.length === 0) return
+      if (!containerRef.current) return
 
-      // Set initial state - fade and slide from right
-      gsap.set(elements, {
+      const images = containerRef.current.querySelectorAll('img')
+      
+      if (images.length === 0) return
+
+      // Set initial state
+      gsap.set(images, {
         opacity: 0,
         x: 100
       })
 
       // Animate on scroll
-      elements.forEach(el => {
-        gsap.to(el, {
+      images.forEach(img => {
+        gsap.to(img, {
           opacity: 1,
           x: 0,
           duration: 1.8,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: el,
-            start: "top 80%",
+            trigger: img,
+            start: "top 85%",
             end: "top 30%",
             toggleActions: "play none none reverse",
+            // Add these for better reliability
+            once: false,
+            invalidateOnRefresh: true
           }
         })
       })
+    }, 200)
 
-      return () => {
-        ScrollTrigger.getAll().forEach(t => t.kill())
-      }
-    }, 100)
-
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(timer)
+      ScrollTrigger.getAll().forEach(t => t.kill())
+    }
   }, [])
 
   return (
-    <>
+    <div ref={containerRef}>
       <Image 
-        ref={desktopRef}
         src={Cargo} 
         alt='valeur-cargo'  
-        className='absolute lg:flex hidden -right-12 w-[50%]'
+        className='absolute hidden lg:block -right-12 w-[50%]'
+        priority
       />
 
       <Image 
-        ref={mobileRef}
         src={Cargo} 
         alt='valeur-cargo'  
-        className='flex lg:hidden -right-12'
+        className='block lg:hidden -right-12'
+        priority
       />
-    </>
+    </div>
   )
 }
