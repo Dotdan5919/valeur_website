@@ -11,7 +11,7 @@ import CallUs from '@/components/ui/CallUs'
 
 export default function page() {
   return (
-     <div className="flex flex-col  items-center  font-sans dark:bg-black  ">
+     <div className="flex flex-col  items-center  font-sans dark:bg-white  ">
                   
                   
                   <Navbar/>
