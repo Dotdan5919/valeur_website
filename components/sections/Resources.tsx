@@ -71,7 +71,7 @@ How_it_works={["Weekly Updates","Market Intelligence","Expert Analysis","Trend F
 </div>
 
 
-<div className='flex md:flex-row flex-col bg-mybg p-16 gap-6 w-[90%]'>
+<div className='flex md:flex-row flex-col bg-mybg p-16 gap-6 md:w-[90%] w-full'>
 
 <div className='flex flex-col items-center  justify-center text-center gap-4'>
 
