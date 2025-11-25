@@ -19,7 +19,7 @@ export default function Hero() {
 
   
   return (
-    <div id="hero" className="flex flex-col lg:min-h-screen h-screen items-center     font-sans  w-full  relative overflow-hidden ">
+    <div id="hero" className="flex flex-col lg:min-h-screen  items-center     font-sans  w-full  relative overflow-hidden ">
 
 
 <Navbar/>
@@ -29,7 +29,7 @@ export default function Hero() {
 
 <Tower/>
 </div>
-<Image src={Map}  className='object-cover   flex w-full absolute  z-0' alt='Eiffel Tower' />   
+<Image src={Map}  className='object-cover   flex lg:w-full lg:h-auto h-screen absolute  z-0' alt='Eiffel Tower' />   
 <Image src={bg}  className='object-cover   flex w-full absolute h-full -z-1' alt='bg Tower' />   
 
       

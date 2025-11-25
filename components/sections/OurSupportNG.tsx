@@ -37,7 +37,7 @@ export default function OurSupportEU() {
         Our Support for Nigerian Exporters
       </h1> 
       
-      <div className="grid lg:grid-cols-3 w-full md:grid-cols-2 grid-cols-1 items-center justify-center gap-6">
+      <div className="md:grid lg:grid-cols-3 w-full md:grid-cols-2 grid-cols-1 flex items-center justify-center gap-6">
         <div 
           className={`transition-all duration-700 ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
