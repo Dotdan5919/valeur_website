@@ -33,7 +33,7 @@ export default function DealsCard({Product,Product_title,desc_header,desc_body,K
 
 </div>
 
-<div className="flex flex-col">
+<div className="flex flex-col gap-2">
 
 
 <h1 className='MyH6'>Key Features</h1>
@@ -43,7 +43,7 @@ export default function DealsCard({Product,Product_title,desc_header,desc_body,K
     {Key_features.map((e)=>{
 
 return (
-<li className='flex flex-row gap-4' key={e}><Image src={double_mark} alt='list' className='object-contain'/>{e} </li>)
+<li className='flex flex-row gap-4 hover:shadow-md duration-500 hover:scale-105 cursor-default' key={e}><Image src={double_mark} alt='list' className='object-contain'/>{e} </li>)
 
     })}
 

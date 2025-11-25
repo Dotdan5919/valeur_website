@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Service_1 from '@/images/Slider/Service_1.jpg'
+import Service_3 from '@/images/Slider/Service_5.jpg'
 import ServiceCard from '../ui/ServiceCard'
 import TitleSection from '../ui/TitleSection'
 
@@ -12,7 +12,7 @@ export default function OurService() {
 Nigeria and West Africa, we deliver precision, trust, and market intelligence every step of the way.'/>
 
       <div className='w-[90%] h-64 md:h-[408px] relative overflow-hidden rounded-lg'>
-        <Image src={Service_1} alt='Valeur_service' fill className='object-cover' />
+        <Image src={Service_3} alt='Valeur_service' fill className='object-cover' />
       </div>
 
 <div className="grid md:grid-cols-2 grid-cols-1 justify-between w-[90%]  gap-20">

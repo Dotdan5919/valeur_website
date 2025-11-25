@@ -7,6 +7,7 @@ import EU_Nigeria from '@/images/EU-Nigeria.jpg'
 import OurSupport from './OurSupportEU'
 import Whoweare from './WhoweareEU'
 import MarketToggle from './MarketToggle'
+import Service_1 from '@/images/Slider/Service_1.jpg'
 
 export default function   Market() {
   return (
@@ -15,6 +16,9 @@ export default function   Market() {
 <h1 className='MyH4 animate-fade-in-up'>Markets We Serve</h1>
 <p className='text-[18px] text-mytext text-center animate-fade-in-up'>Linking two thriving agri-economies — the EU and Nigeria. We create reliable pathways for sustainable, profitable cross-border trade.</p>
 </div>
+  <div className='w-[100%] h-64 md:h-[408px] relative overflow-hidden rounded-lg'>
+        <Image src={Service_1} alt='Valeur_service' fill className='object-cover' />
+      </div>
 
 <MarketToggle/>
 

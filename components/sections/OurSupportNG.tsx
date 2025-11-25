@@ -86,20 +86,20 @@ export default function OurSupportEU() {
       <h1 ref={headingRef} className='MyH5'>Our Support for Nigerian Exporters</h1> 
       
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6" >
-        <div ref={card1Ref}>
+      <div className="grid lg:grid-cols-3 w-full md:grid-cols-2 grid-cols-1 gap-6" >
+        <div ref={card1Ref} className=''>
           <SupportCard name='EU Standards Compliance' description='Guidance and facilitation for traceability
 systems, phytosanitary certificates, organic certifications, and other
 regulatory requirements.' Img={local} />
         </div>
 
-        <div ref={card2Ref}>
+        <div ref={card2Ref} className=''>
           <SupportCard name='Packaging, Logistics & Documentation' description='– Ensuring your products meet EU
 presentation standards and documentation requirements for smooth customs
 clearance.' Img={Market} />
         </div>
 
-        <div ref={card3Ref}>
+        <div ref={card3Ref} className=''>
           <SupportCard name='Market Matchmaking' description='Introducing you to reputable buyers, processors, and wholesalers across Europe.' Img={Trade} />
         </div>
 
